@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.polimorfismo.controllers.MenuController">
+   <children>
+      <Label layoutX="192.0" layoutY="14.0" text="Universidad">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_actualizar" layoutX="390.0" layoutY="282.0" mnemonicParsing="false" onMouseClicked="#btn_actualizar" text="Actualizar" />
+      <Button fx:id="btn_agregar" layoutX="394.0" layoutY="336.0" mnemonicParsing="false" onMouseClicked="#btn_agregar" text="Agregar" />
+      <Label layoutX="55.0" layoutY="284.0" text="Nombre:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="338.0" text="Apellido:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tex_name" layoutX="142.0" layoutY="282.0" />
+      <TextField fx:id="tex_apellido" layoutX="142.0" layoutY="336.0" />
+      <ListView fx:id="lista" layoutX="41.0" layoutY="72.0" onMouseClicked="#lista" prefHeight="200.0" prefWidth="526.0" />
+   </children>
+</AnchorPane>
